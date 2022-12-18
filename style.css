@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root{
+  --yellow:#f9ca24;
+}
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; border: none;
+  text-transform: capitalize;
+  transition: all .5s linear
+}
+
+*::selection{
+  background: var(--yellow);
+  color: #333;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+  width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #222;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--yellow);
+}
+
+body{
+  background: #111;
+  overflow-x: hidden;
+  padding-left: 35rem;
+}
+
+section{
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.home .btn{
+  padding: .7rem 3rem;
+  background: dimgray;
+  color: white;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+
+.btn:hover{
+  background: var(--yellow);
+}
+
+.heading{
+  text-align: center;
+  margin:0 6rem;
+  font-style: 4rem;
+  padding: 1rem;
+  border-bottom: .1rem solid dimgray;
+  color: white;
+  font-size: 35px;
+}
+.heading span{
+  color: var(--yellow);
+}
+
+header{
+  position: fixed;
+  top:0; left:0;
+  z-index:1000;
+  height: 100%;
+  width: 35rem;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+  
+}
+
+header .user img{
+  height: 17rem;
+  width: 17rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: .7rem solid var(--yellow);
+  
+}
+
+header .name{
+  font-size: 3rem;
+  color: blanchedalmond;
+}
+
+header .user .post {
+  font-size: 2rem;
+  color: white;
+}
+
+header .navbar{
+  width: 100%;
+}
+
+header .navbar ul{
+  list-style: none;
+  padding:1rem 3rem;
+}
+
+header .navbar ul li a{
+  display: block;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background: dimgray;
+  color: white;
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+
+header .navbar ul li a:hover{
+  background: var(--yellow);
+}
+
+#menu{
+  position: fixed;
+  top:2rem; right:2rem;
+  background: dimgray;
+  color: white;
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding:1rem 1.5rem;
+  z-index: 1000;
+  display: none;
+}
+
+.home{
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding:0 15rem;
+}
+
+.home h2{
+  font-size: 2.5rem;
+  color: white;
+}
+
+.home h1{
+  font-size: 5rem; 
+  color: white;
+}
+
+.home p{
+  font-size: 2rem;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+.home span{
+  color: var(--yellow);
+}
+.about .info{
+  justify-content: center;
+  font-size: 25px;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  color: whitesmoke;
+}
+.education .counter{
+  flex:1 1 48rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.education .counter .box{
+  width: 20rem;
+  background: black;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+}
+.education .counter .box span{
+  color: var(--yellow);
+  font-size: 25px;
+}
+.education .counter .box h3{
+  color: white;
+  font-size: 15px;
+}
+.contact .icons{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 25vh;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 200px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0 10px;
+}
+.icon:hover{
+  width: 200px;
+}
+.icon i{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
